@@ -1,0 +1,144 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/mostrarOpcoesSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_op_es" />
+
+    <LinearLayout
+        android:id="@+id/selecionarLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecione" />
+
+        <RadioGroup
+            android:id="@+id/opcaoRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/parRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_marginHorizontal="5dp"
+                android:text="@string/par" />
+            <RadioButton
+                android:id="@+id/imparRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:text="@string/impar" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jogada" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/zeroBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/zero"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/umBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/one"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <ImageButton
+            android:id="@+id/doisBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/two"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <ImageButton
+            android:id="@+id/tresBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/three"
+             android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <ImageButton
+            android:id="@+id/quatroBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/four"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <ImageButton
+            android:id="@+id/cincoBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/five"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jogada_do_computador" />
+
+    <ImageView
+        android:id="@+id/jogadaComputadorIv"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado" />
+
+    <TextView
+        android:id="@+id/resultadoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
